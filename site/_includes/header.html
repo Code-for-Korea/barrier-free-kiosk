@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav aria-label="주 메뉴">
+      <ul class="nav-list">
+        <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>체험하기</a></li>
+        <li><a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>프로젝트 소개</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="settings" role="group" aria-label="화면 설정">
+    <div class="wrap settings-row">
+      <button type="button" class="toggle" id="toggle-size" aria-pressed="false">큰 글씨</button>
+      <button type="button" class="toggle" id="toggle-contrast" aria-pressed="false">고대비 화면</button>
+    </div>
+  </div>
+</header>

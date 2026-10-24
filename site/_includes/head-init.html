@@ -1,0 +1,8 @@
+<script>
+  /* 저장된 화면 설정을 페인트 전에 적용해 깜빡임을 막는다 */
+  try {
+    var d = document.documentElement;
+    if (localStorage.getItem("cfk-size") === "large") d.setAttribute("data-size", "large");
+    if (localStorage.getItem("cfk-contrast") === "high") d.setAttribute("data-contrast", "high");
+  } catch (e) {}
+</script>

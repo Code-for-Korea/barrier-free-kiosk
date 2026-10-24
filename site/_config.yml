@@ -1,0 +1,13 @@
+title: 모두의 키오스크
+description: 누구나 쉽게 쓸 수 있는 키오스크를 함께 만드는 프로젝트. 경복궁 티켓 발권기와 카페 주문 키오스크를 직접 체험해 보세요.
+lang: ko
+# 프로젝트 페이지 배포 시 저장소 이름으로 바꾼다 (예: /barrier-free-kiosk). 도메인 확정 시 "" 로.
+baseurl: ""
+url: ""
+timezone: Asia/Seoul
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
