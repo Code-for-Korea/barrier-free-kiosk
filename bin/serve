@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# 로컬 미리보기 서버를 띄운다 (파일을 고치면 자동으로 다시 빌드).
+# 사용법: bin/serve [포트]   기본 포트 4000 → http://localhost:4000/
+set -euo pipefail
+PORT="${1:-4000}"
+cd "$(dirname "$0")/../site"
+bundle check >/dev/null 2>&1 || bundle install
+exec bundle exec jekyll serve --livereload --host 127.0.0.1 --port "$PORT"
