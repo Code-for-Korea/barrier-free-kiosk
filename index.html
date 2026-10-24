@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>모두의 키오스크</title>
+  <meta name="description" content="누구나 쉽게 쓸 수 있는 키오스크를 함께 만드는 프로젝트. 경복궁 티켓 발권기와 카페 주문 키오스크를 직접 체험해 보세요.">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script>
+  /* 저장된 화면 설정을 페인트 전에 적용해 깜빡임을 막는다 */
+  try {
+    var d = document.documentElement;
+    if (localStorage.getItem("cfk-size") === "large") d.setAttribute("data-size", "large");
+    if (localStorage.getItem("cfk-contrast") === "high") d.setAttribute("data-contrast", "high");
+  } catch (e) {}
+</script>
+
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">모두의 키오스크</a>
+    <nav aria-label="주 메뉴">
+      <ul class="nav-list">
+        <li><a href="/" aria-current="page">체험하기</a></li>
+        <li><a href="/about/">프로젝트 소개</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="settings" role="group" aria-label="화면 설정">
+    <div class="wrap settings-row">
+      <button type="button" class="toggle" id="toggle-size" aria-pressed="false">큰 글씨</button>
+      <button type="button" class="toggle" id="toggle-contrast" aria-pressed="false">고대비 화면</button>
+    </div>
+  </div>
+</header>
+
+  <main id="main" tabindex="-1">
+    <div class="wrap">
+      <h1 id="누구나-쉽게-쓰는-키오스크-직접-체험해-보세요">누구나 쉽게 쓰는 키오스크, 직접 체험해 보세요</h1>
+
+<p class="lead">모두의 키오스크는 어르신과 디지털 환경이 낯선 분들도 편하게 쓸 수 있는 키오스크 화면을 함께 만드는 프로젝트입니다. 아래에서 개선 중인 화면을 직접 눌러 보시고, 불편한 점을 알려 주세요.</p>
+
+<section aria-labelledby="demos-heading">
+  <h2 id="demos-heading">체험할 수 있는 키오스크</h2>
+  <div class="cards">
+    
+      <article class="card" aria-labelledby="demo-gyeongbokgung">
+  <p class="badge">개발 중 최신본</p>
+  <h3 id="demo-gyeongbokgung">경복궁 티켓 발권 키오스크</h3>
+  <p>고궁 입장권을 사는 무인발권기를 더 쉽게 고쳐 만든 체험판입니다. 큰 글자 모드와 음성 안내를 함께 다듬고 있습니다.</p>
+  <a class="button" href="https://cfk-app.vercel.app/kiosk-tour" target="_blank" rel="noopener noreferrer">경복궁 키오스크 체험하기<span class="sr-only"> (새 창, 외부 사이트)</span></a>
+</article>
+
+    
+      <article class="card" aria-labelledby="demo-gyeongbokgung-original">
+  <p class="badge">현재 키오스크 그대로</p>
+  <h3 id="demo-gyeongbokgung-original">경복궁 키오스크 재현본</h3>
+  <p>지금 현장에서 쓰이는 경복궁 발권기를 최대한 비슷하게 재현한 페이지입니다. 개선 전 모습을 체험하고 설문에 참여할 수 있습니다.</p>
+  <a class="button" href="https://palace-kiosk.web.app/" target="_blank" rel="noopener noreferrer">경복궁 재현본 체험하기<span class="sr-only"> (새 창, 외부 사이트)</span></a>
+</article>
+
+    
+      <article class="card" aria-labelledby="demo-cafe">
+  <p class="badge">시연본</p>
+  <h3 id="demo-cafe">카페 주문 키오스크</h3>
+  <p>카페(파스쿠찌형) 주문 키오스크를 어르신 눈높이에 맞춰 새로 디자인했습니다. 큰 글자와 고대비 화면을 지원합니다.</p>
+  <a class="button" href="https://senior-cafe-kiosk-design.vercel.app/" target="_blank" rel="noopener noreferrer">카페 키오스크 체험하기<span class="sr-only"> (새 창, 외부 사이트)</span></a>
+</article>
+
+    
+  </div>
+</section>
+
+<p class="notice">체험 화면은 연습용입니다. 실제 결제나 발권은 이루어지지 않으니 안심하고 눌러 보세요.</p>
+
+<p><a href="/about/">이 프로젝트가 궁금하신가요? 프로젝트 소개 보기</a></p>
+
+    </div>
+  </main>
+  <footer class="site-footer">
+  <div class="wrap">
+    <p>모두의 키오스크는 <a href="https://codefor.kr/posts/w9tpz05" target="_blank" rel="noopener noreferrer">코드포코리아<span class="sr-only"> (새 창, 외부 사이트)</span></a> 시민 참여 프로젝트입니다.</p>
+    <p>이 페이지의 체험 화면은 연습용이며 실제 결제나 발권이 이루어지지 않습니다.</p>
+  </div>
+</footer>
+
+  <script src="/assets/js/a11y.js" defer></script>
+</body>
+</html>

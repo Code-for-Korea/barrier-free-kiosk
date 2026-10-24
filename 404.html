@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>페이지를 찾을 수 없어요 | 모두의 키오스크</title>
+  <meta name="description" content="누구나 쉽게 쓸 수 있는 키오스크를 함께 만드는 프로젝트. 경복궁 티켓 발권기와 카페 주문 키오스크를 직접 체험해 보세요.">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script>
+  /* 저장된 화면 설정을 페인트 전에 적용해 깜빡임을 막는다 */
+  try {
+    var d = document.documentElement;
+    if (localStorage.getItem("cfk-size") === "large") d.setAttribute("data-size", "large");
+    if (localStorage.getItem("cfk-contrast") === "high") d.setAttribute("data-contrast", "high");
+  } catch (e) {}
+</script>
+
+</head>
+<body>
+  <a class="skip-link" href="#main">본문 바로가기</a>
+  <header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">모두의 키오스크</a>
+    <nav aria-label="주 메뉴">
+      <ul class="nav-list">
+        <li><a href="/">체험하기</a></li>
+        <li><a href="/about/">프로젝트 소개</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="settings" role="group" aria-label="화면 설정">
+    <div class="wrap settings-row">
+      <button type="button" class="toggle" id="toggle-size" aria-pressed="false">큰 글씨</button>
+      <button type="button" class="toggle" id="toggle-contrast" aria-pressed="false">고대비 화면</button>
+    </div>
+  </div>
+</header>
+
+  <main id="main" tabindex="-1">
+    <div class="wrap">
+      <h1 id="페이지를-찾을-수-없어요">페이지를 찾을 수 없어요</h1>
+
+<p>주소가 바뀌었거나 잘못 입력되었을 수 있습니다.</p>
+
+<p><a class="button" href="/">처음 화면으로 가기</a></p>
+
+    </div>
+  </main>
+  <footer class="site-footer">
+  <div class="wrap">
+    <p>모두의 키오스크는 <a href="https://codefor.kr/posts/w9tpz05" target="_blank" rel="noopener noreferrer">코드포코리아<span class="sr-only"> (새 창, 외부 사이트)</span></a> 시민 참여 프로젝트입니다.</p>
+    <p>이 페이지의 체험 화면은 연습용이며 실제 결제나 발권이 이루어지지 않습니다.</p>
+  </div>
+</footer>
+
+  <script src="/assets/js/a11y.js" defer></script>
+</body>
+</html>
