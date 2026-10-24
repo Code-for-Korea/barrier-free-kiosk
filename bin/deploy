@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+# 로컬에서 Jekyll 사이트를 빌드해 gh-pages 브랜치로 배포한다 (GitHub Actions 미사용).
+#
+# 사용법: bin/deploy [--no-push]
+#   --no-push  gh-pages 브랜치에 커밋만 하고 push 하지 않는다.
+# 전제: git remote "origin" 이 설정되어 있고, GitHub Pages 소스가 gh-pages 브랜치(/)여야 한다.
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+BRANCH="gh-pages"
+PUSH=1
+[[ "${1:-}" == "--no-push" ]] && PUSH=0
+
+cd "$ROOT"
+if [[ "$PUSH" == 1 ]] && ! git remote get-url origin >/dev/null 2>&1; then
+  echo "origin remote 가 없습니다. 먼저 GitHub 저장소를 연결하세요." >&2
+  exit 1
+fi
+
+WORK="$(mktemp -d)"
+trap 'git worktree remove --force "$WORK/tree" 2>/dev/null || true; rm -rf "$WORK"' EXIT
+
+echo "==> 빌드"
+( cd site && bundle exec jekyll build -d "$WORK/_site" )
+touch "$WORK/_site/.nojekyll"
+
+echo "==> $BRANCH 준비"
+if git show-ref --verify --quiet "refs/heads/$BRANCH"; then
+  git worktree add "$WORK/tree" "$BRANCH"
+elif git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
+  git fetch origin "$BRANCH:$BRANCH"
+  git worktree add "$WORK/tree" "$BRANCH"
+else
+  git worktree add --detach "$WORK/tree"
+  ( cd "$WORK/tree" && git checkout --orphan "$BRANCH" && git rm -rf . >/dev/null 2>&1 || true )
+fi
+
+# 기존 내용을 비우고(.git 제외) 빌드 결과로 교체
+find "$WORK/tree" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+cp -R "$WORK/_site/." "$WORK/tree/"
+
+cd "$WORK/tree"
+git add -A
+if git diff --cached --quiet; then
+  echo "변경 사항이 없어 배포를 건너뜁니다."
+  exit 0
+fi
+git commit -q -m "Deploy site $(date '+%Y-%m-%d %H:%M')"
+if [[ "$PUSH" == 1 ]]; then
+  git push origin "$BRANCH"
+  echo "==> 배포 완료 (Pages 반영까지 1~2분 걸립니다)"
+else
+  echo "==> 커밋만 완료 (--no-push). 확인 후: git push origin $BRANCH"
+fi
