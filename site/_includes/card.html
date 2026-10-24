@@ -1,0 +1,7 @@
+{%- comment -%} 인자: include.demo (_data/demos.yml 항목) {%- endcomment -%}
+<article class="card" aria-labelledby="demo-{{ include.demo.id }}">
+  <p class="badge">{{ include.demo.badge }}</p>
+  <h3 id="demo-{{ include.demo.id }}">{{ include.demo.title }}</h3>
+  <p>{{ include.demo.description }}</p>
+  <a class="button" href="{{ include.demo.url }}" target="_blank" rel="noopener noreferrer">{{ include.demo.action }}<span class="sr-only"> (새 창, 외부 사이트)</span></a>
+</article>
