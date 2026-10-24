@@ -1,3 +1,7 @@
 .omc/
 wip/
 .env
+site/_site/
+site/.jekyll-cache/
+site/.bundle/
+site/vendor/
