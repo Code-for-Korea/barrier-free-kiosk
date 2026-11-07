@@ -4,6 +4,18 @@
 
 > [Code for Korea](https://codefor.kr) 프로젝트 · [프로젝트 소개글](https://codefor.kr/posts/w9tpz05)
 
+## 바로가기
+
+| 알고 싶은 것 | 링크 |
+|---|---|
+| 공개 사이트(대문) | <https://code-for-korea.github.io/barrier-free-kiosk/> |
+| 프로젝트 소개 | <https://code-for-korea.github.io/barrier-free-kiosk/about/> |
+| 만든 사람들 | <https://code-for-korea.github.io/barrier-free-kiosk/credit/> |
+| 참여하기 | <https://code-for-korea.github.io/barrier-free-kiosk/contribute/> |
+| 기여 안내(저장소) | [CONTRIBUTING.md](CONTRIBUTING.md) |
+| 의견·불편 사항 남기기 | [이슈](https://github.com/Code-for-Korea/barrier-free-kiosk/issues) |
+| 저장소 구조·작업 규칙 | [AGENTS.md](AGENTS.md) |
+
 ## 체험할 수 있는 키오스크
 
 대문 페이지에는 국립 고궁 티켓 발권기와 국립 미술관 1층 카페 키오스크 두 가지만 보여 줍니다. 국립 고궁 재현본은 프로젝트 소개 페이지에서 연결합니다. 모두 연습용이며 실제 결제와 발권하지 않습니다.
@@ -66,6 +78,8 @@ bin/deploy --no-push    # 커밋까지만 하고 push는 직접 확인 후 실�
 
 ```text
 .tool-versions            Ruby 버전 고정
+CONTRIBUTING.md           기여 안내
+AGENTS.md                 저장소 구조·작업 규칙
 bin/
   serve                   로컬 미리보기 서버
   build                   site/_site 빌드
@@ -79,6 +93,8 @@ site/
   assets/js/a11y.js       큰 글씨·고대비 토글
   index.md                대문 (체험하기)
   about.md                프로젝트 소개
+  credit.md               만든 사람들
+  contribute.md           참여하기
   404.md                  없는 페이지
 ```
 
@@ -101,13 +117,13 @@ npx pa11y@8 --runner axe http://localhost:4000/
 
 ## 콘텐츠 수정
 
-- 체험 링크 추가·수정: `site/_data/demos.yml`
-- 대문 문구: `site/index.md`, 소개 문구: `site/about.md`
+- 체험 링크 추가·수정, 만든 사람(`makers`) 표기: `site/_data/demos.yml`
+- 대문 문구: `site/index.md`, 소개 문구: `site/about.md`, 만든 사람들: `site/credit.md`, 참여하기: `site/contribute.md`
 - 주의 사항: 개인정보, 비공개 회의 내용, 불명확한 내용을 포함하지 않아야 합니다.
 
 ## 함께하기
 
-직접 체험하고 불편 사항과 의견을 저장소 이슈로 남겨 주세요. 함께 이야기하려면 [코드포코리아](https://codefor.kr) 커뮤니티에 참여해 주세요.
+직접 체험하고 불편 사항과 의견을 저장소 [이슈](https://github.com/Code-for-Korea/barrier-free-kiosk/issues)로 남겨 주세요. 코드나 문구를 고치려면 [CONTRIBUTING.md](CONTRIBUTING.md)의 절차를 따라 주세요. 함께 이야기하려면 [코드포코리아](https://codefor.kr) 커뮤니티에 참여해 주세요.
 
 ## 라이선스
 

@@ -21,7 +21,7 @@
   action: 국립 고궁 재현본 체험하기
   makers:
     - role: 재현·개발
-      names: 슬생 (슬기로운 생활)
+      names: 슬기로운 생활
 - id: cafe
   home: true
   title: 국립 미술관 1층 카페 주문 키오스크
