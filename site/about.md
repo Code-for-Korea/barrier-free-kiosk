@@ -18,7 +18,7 @@ permalink: /about/
 ## 무엇을 하나요
 
 <ul>
-  <li><strong>함께 투어:</strong> 어르신과 함께 실제 키오스크(경복궁 티켓 발권기, 카페 주문 키오스크)를 써 보며 어려운 지점을 찾는 체험 프로그램입니다. 참여자 설문으로 의견을 모았습니다.</li>
+  <li><strong>함께 투어:</strong> 어르신과 함께 실제 키오스크(국립 고궁 티켓 발권기, 카페 주문 키오스크)를 써 보며 어려운 지점을 찾는 체험 프로그램입니다. 참여자 설문으로 의견을 모았습니다.</li>
   <li><strong>화면 개선:</strong> 찾아낸 어려움을 바탕으로 큰 글자, 고대비, 음성 안내 등 접근성을 갖춘 화면을 기획·디자인하고 직접 만들어 보고 있습니다.</li>
   <li><strong>사용성 테스트:</strong> 개선 전과 후 화면을 비교 체험하고 설문으로 효과를 확인합니다.</li>
   <li><strong>공개:</strong> 개발한 결과물과 조사 결과를 정리해 공개할 계획입니다.</li>
@@ -38,8 +38,8 @@ permalink: /about/
   <caption>2026년 하반기 진행 계획 (변경될 수 있습니다)</caption>
   <thead><tr><th scope="col">시기</th><th scope="col">내용</th></tr></thead>
   <tbody>
-    <tr><th scope="row">10월 말</th><td>경복궁 키오스크 개발, 카페 키오스크 1차 개발</td></tr>
-    <tr><th scope="row">11월 초</th><td>경복궁 키오스크 점검(QA), 카페 키오스크 2차 개발</td></tr>
+    <tr><th scope="row">10월 말</th><td>국립 고궁 키오스크 개발, 카페 키오스크 1차 개발</td></tr>
+    <tr><th scope="row">11월 초</th><td>국립 고궁 키오스크 점검(QA), 카페 키오스크 2차 개발</td></tr>
     <tr><th scope="row">11월</th><td>이용 통계(GA4) 연결, 사용성 테스트 재진행</td></tr>
     <tr><th scope="row">12월 무렵</th><td>결과물과 조사 보고서 공개</td></tr>
   </tbody>
