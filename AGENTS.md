@@ -9,8 +9,8 @@
 |---|---|
 | `site/` | Jekyll 4.4 사이트 전체 (Ruby 3.4.7 — `.tool-versions` 고정) |
 | `site/index.md` | 대문(첫 화면). 체험 카드 목록 |
-| `site/about.md` | 프로젝트 소개 (`/about/`) |
-| `site/_data/demos.yml` | 체험 링크 데이터. **체험 페이지 추가·수정은 이 파일만** 고친다 |
+| `site/about.md`, `team.md`, `contribute.md` | 프로젝트 소개(`/about/`), 만든 사람들(`/team/`), 참여하기(`/contribute/`). 기여 규칙 원문은 루트 `CONTRIBUTING.md` |
+| `site/_data/demos.yml` | 체험 링크 데이터. **체험 페이지 추가·수정은 이 파일만** 고친다. 항목의 `makers`(역할·이름)는 `/team/`에 나온다 |
 | `site/_includes/`, `_layouts/` | `card.html`, `header.html`, `footer.html`, `head-init.html`, `default.html` |
 | `site/assets/` | `css/style.css`, `js/a11y.js` (외부 CDN·웹폰트 없음) |
 | `bin/` | `serve`(로컬 미리보기), `build`, `deploy`(gh-pages 배포) |

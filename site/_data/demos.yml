@@ -7,6 +7,11 @@
   description: 고궁 입장권을 사는 무인발권기를 더 쉽게 고쳐 만든 체험판입니다. 큰 글자 모드와 음성 안내를 함께 다듬고 있습니다.
   url: https://cfk-app.vercel.app/kiosk-tour
   action: 국립 고궁 키오스크 체험하기
+  makers:
+    - role: 기획·디자인
+      names: 플루잇토
+    - role: 개발
+      names: 진호
 - id: gyeongbokgung-original
   home: false
   title: 국립 고궁 키오스크 재현본
@@ -21,3 +26,6 @@
   description: 국립 미술관 1층 카페의 주문 키오스크를 어르신 눈높이에 맞춰 새로 디자인했습니다. 큰 글자와 고대비 화면을 지원합니다.
   url: https://senior-cafe-kiosk-design.vercel.app/
   action: 카페 키오스크 체험하기
+  makers:
+    - role: 기획·개발
+      names: 새롬
