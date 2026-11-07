@@ -34,7 +34,7 @@ permalink: /contribute/
 4. `bin/build`가 통과하는지 확인합니다.
 5. PR을 올리고 무엇을 왜 바꿨는지, 바꾼 화면을 적습니다.
 
-체험 링크와 만든 사람 정보는 `site/_data/demos.yml`만 고치면 됩니다. 자세한 규칙은 저장소의 [CONTRIBUTING.md](https://github.com/Code-for-Korea/barrier-free-kiosk/blob/main/CONTRIBUTING.md){:target="_blank" rel="noopener noreferrer"}<span class="sr-only"> (새 창, 외부 사이트)</span>를 참고하세요.
+체험 링크와 만든 사람(역할·이름·작업 내용) 정보는 `site/_data/demos.yml`만 고치면 됩니다. 자세한 규칙은 저장소의 [CONTRIBUTING.md](https://github.com/Code-for-Korea/barrier-free-kiosk/blob/main/CONTRIBUTING.md){:target="_blank" rel="noopener noreferrer"}<span class="sr-only"> (새 창, 외부 사이트)</span>를 참고하세요.
 
 ## 지켜 주세요
 

@@ -16,7 +16,7 @@ permalink: /credit/
   {% if demo.makers %}
   <ul>
     {% for maker in demo.makers %}
-    <li><strong>{{ maker.role }}:</strong> {{ maker.names }}</li>
+    <li><strong>{{ maker.role }}:</strong> {{ maker.names }}{% if maker.work %} — {{ maker.work }}{% endif %}</li>
     {% endfor %}
   </ul>
   {% else %}
