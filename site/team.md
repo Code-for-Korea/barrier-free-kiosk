@@ -29,7 +29,7 @@ permalink: /team/
 
 <ul>
   <li><strong>개발 참여:</strong> 슬생, 달로스 (프론트엔드·백엔드)</li>
-  <li><strong>설문 조사와 분석:</strong> 슬생, 새롬</li>
+  <li><strong>설문 조사와 분석:</strong> 슬생, 새롬, 플루잇토</li>
   <li><strong>대문 사이트 운영:</strong> 달로스</li>
 </ul>
 
