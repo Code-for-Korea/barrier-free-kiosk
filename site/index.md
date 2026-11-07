@@ -11,7 +11,8 @@ title: 키오스크 체험하기
 <section aria-labelledby="demos-heading">
   <h2 id="demos-heading">체험할 수 있는 키오스크</h2>
   <div class="cards">
-    {% for demo in site.data.demos %}
+    {% assign home_demos = site.data.demos | where: "home", true %}
+    {% for demo in home_demos %}
       {% include card.html demo=demo %}
     {% endfor %}
   </div>
