@@ -1,13 +1,13 @@
 ---
 layout: default
 title: 만든 사람들
-permalink: /team/
+permalink: /credit/
 ---
 
 # 만든 사람들
 
 {: .lead}
-체험 키오스크 세 가지는 코드포코리아 참여자들이 함께 기획·디자인·개발했습니다. 키오스크마다 누가 어떤 일을 맡았는지 소개합니다.
+체험 키오스크 세 가지는 코드포코리아 참여자들이 함께 만들었습니다. 키오스크마다 누가 어떤 작업을 맡았는지 소개합니다.
 
 {% for demo in site.data.demos %}
 <section aria-labelledby="maker-{{ demo.id }}">
@@ -28,8 +28,8 @@ permalink: /team/
 ## 함께한 사람들
 
 <ul>
-  <li><strong>개발 참여:</strong> 슬생, 달로스 (프론트엔드·백엔드)</li>
-  <li><strong>설문 조사와 분석:</strong> 슬생, 새롬, 플루잇토</li>
+  <li><strong>개발 참여:</strong> 슬생 (슬기로운 생활), 달로스 (프론트엔드·백엔드)</li>
+  <li><strong>설문 조사와 분석:</strong> 슬생 (슬기로운 생활), 새롬, 플루잇토</li>
   <li><strong>대문 사이트 운영:</strong> 달로스</li>
 </ul>
 

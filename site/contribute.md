@@ -42,4 +42,4 @@ permalink: /contribute/
 - **쉬운 우리말로 씁니다.** 어려운 용어와 영어를 피합니다.
 - **연습용이라는 안내를 지우지 않습니다.** 체험 화면은 실제 결제나 발권이 되지 않습니다.
 
-<p><a href="{{ '/team/' | relative_url }}">만든 사람들 보기</a></p>
+<p><a href="{{ '/credit/' | relative_url }}">만든 사람들 보기</a></p>

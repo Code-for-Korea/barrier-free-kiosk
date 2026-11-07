@@ -34,7 +34,7 @@ bin/build    # site/_site 에 빌드. PR 전에 통과해야 합니다
 |---|---|
 | 체험 링크 추가·수정, 대문 노출 여부 | `site/_data/demos.yml` (`home: true`만 대문에 나옴) |
 | 키오스크 만든 사람 소개 | `site/_data/demos.yml`의 `makers` |
-| 소개·참여 안내 문구 | `site/about.md`, `site/team.md`, `site/contribute.md` |
+| 소개·참여 안내 문구 | `site/about.md`, `site/credit.md`, `site/contribute.md` |
 | 스타일, 큰 글씨·고대비 | `site/assets/css/style.css`, `site/assets/js/a11y.js` |
 
 ## 지켜 주세요
