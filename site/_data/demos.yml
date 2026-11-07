@@ -6,14 +6,14 @@
   badge: 개발 중 최신본
   description: 고궁 입장권을 사는 무인발권기를 더 쉽게 고쳐 만든 체험판입니다. 큰 글자 모드와 음성 안내를 함께 다듬고 있습니다.
   url: https://cfk-app.vercel.app/kiosk-tour
-  action: 경복궁 키오스크 체험하기
+  action: 국립 고궁 키오스크 체험하기
 - id: gyeongbokgung-original
   home: false
-  title: 경복궁 키오스크 재현본
+  title: 국립 고궁 키오스크 재현본
   badge: 현재 키오스크 그대로
-  description: 지금 현장에서 쓰이는 경복궁 발권기를 최대한 비슷하게 재현한 페이지입니다. 개선 전 모습을 체험하고 설문에 참여할 수 있습니다.
+  description: 지금 현장에서 쓰이는 국립 고궁 발권기를 최대한 비슷하게 재현한 페이지입니다. 개선 전 모습을 체험하고 설문에 참여할 수 있습니다.
   url: https://palace-kiosk.web.app/
-  action: 경복궁 재현본 체험하기
+  action: 국립 고궁 재현본 체험하기
 - id: cafe
   home: true
   title: 국립 미술관 1층 카페 주문 키오스크
