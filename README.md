@@ -12,7 +12,7 @@
 |---|---|---|
 | 국립 고궁 티켓 발권기 | <https://cfk-app.vercel.app/kiosk-tour> | 개선 중인 화면 |
 | 국립 고궁 키오스크 재현본 | <https://palace-kiosk.web.app/> | 현장 키오스크를 재현한 개선 전 화면, 설문 포함 |
-| 국립 미술관 1층 카페 주문 키오스크 | <https://senior-cafe-kiosk-design.vercel.app/> | 큰 글자·고대비를 지원하는 시연본 |
+| 국립 미술관 1층 카페 주문 키오스크 | <https://code-for-korea.github.io/senior-cafe-kiosk-design/> | 큰 글자·고대비를 지원하는 시연본 |
 
 체험하는 페이지 주소를 `site/_data/demos.yml` 에서 관리합니다.
 
