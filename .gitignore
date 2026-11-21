@@ -5,3 +5,5 @@ site/_site/
 site/.jekyll-cache/
 site/.bundle/
 site/vendor/
+tmp/
+!tmp/.keep
